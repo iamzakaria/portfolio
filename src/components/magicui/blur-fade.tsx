@@ -29,9 +29,10 @@ const BlurFade = ({
   inViewMargin = "-50px",
   blur = "6px",
 }: BlurFadeProps) => {
+  // Fix: rename inViewMargin to rootMargin to match the expected parameter name
   const { ref, inView: inViewResult } = useInView({
     triggerOnce: true,
-    rootMargin: inViewMargin,
+    rootMargin: inViewMargin,  // This is the correct property name for react-intersection-observer
   });
 
   const isInView = !inView || inViewResult;

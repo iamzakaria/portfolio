@@ -1,9 +1,9 @@
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 import * as React from "react";
-
 import { cn } from "@/lib/utils";
 
+// Define the button variants using class-variance-authority (CVA)
 const buttonVariants = cva(
   "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
   {
@@ -34,15 +34,19 @@ const buttonVariants = cva(
   }
 );
 
+// Button props interface
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
-  asChild?: boolean;
+  asChild?: boolean; // Whether to render as a child slot component (for composability)
 }
 
+// Button component with forwardRef for ref forwarding
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
-    const Comp = asChild ? Slot : "button";
+    // If `asChild` is true, render a Slot element, else render a button element
+    const Comp = asChild ? SlotWithRef : "button";
+
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}
@@ -52,6 +56,17 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     );
   }
 );
-Button.displayName = "Button";
 
+Button.displayName = "Button"; // For debugging, to ensure the component name is displayed
+
+// Optional: Wrap Slot in forwardRef to avoid unexpected issues with refs
+const SlotWithRef = React.forwardRef<
+  HTMLButtonElement,
+  React.ComponentPropsWithoutRef<typeof Slot>
+>((props, ref) => <Slot {...props} ref={ref} />);
+
+// Ensure the display name is correctly set for debugging
+SlotWithRef.displayName = "SlotWithRef";
+
+// Export Button and variants
 export { Button, buttonVariants };
