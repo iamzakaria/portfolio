@@ -1,4 +1,5 @@
 import { HackathonCard } from "@/components/hackathon-card";
+import { CertificationCard } from "@/components/CertificationCard";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -190,6 +191,34 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
+      <section id="licenses-and-certifications" className="scroll-mt-16 lg:scroll-mt-24">
+            <div className="space-y-12 w-full py-12">
+              <BlurFade delay={BLUR_FADE_DELAY * 13}>
+                <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                  <div className="space-y-2">
+                    <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                      Trainings & Certifications
+                    </div>
+                    <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                      My Professional Trainings & Certifications
+                    </h2>
+                    <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed max-w-[800px] mx-auto">
+                      Here are some of the professional licenses and certifications I've earned through experience and continuous learning.
+                    </p>
+                  </div>
+                </div>
+              </BlurFade>
+              <BlurFade delay={BLUR_FADE_DELAY * 14}>
+                <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+                  {DATA.certifications.map((cert, idx) => (
+                    <BlurFade key={cert.title} delay={BLUR_FADE_DELAY * 15 + idx * 0.05}>
+                      <CertificationCard {...cert} />
+                    </BlurFade>
+                  ))}
+                </ul>
+              </BlurFade>
+            </div>
+          </section>
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>

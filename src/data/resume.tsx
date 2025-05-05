@@ -383,4 +383,90 @@ export const DATA = {
     },
     
   ],
+  certifications: [
+    {
+      title: "SQL Fundamentals",
+      description: "Developed a solid understanding of SQL fundamentals and applied them in database testing to ensure data integrity, accuracy, and performance.",
+      date: "April 2025",
+      issuer: "DataCamp",
+      image: "/data2.png",
+      links: [
+        {
+          icon: "🔗",
+          title: "View Certificate",
+          href: "https://www.datacamp.com/completed/statement-of-accomplishment/track/95688e01215fec958f86046b57515abf77a9cc17",
+        },
+      ],
+    },
+    {
+      title: "Postman API Fundamentals",
+      description: "Gained hands-on experience in API testing using Postman, including creating and executing test cases, validating responses, and automating API tests.",
+      date: "April 2025",
+      issuer: "Postman",
+      image: "/postman.png",
+      links: [{
+        icon: "🔗",
+        title: "View Certificate",
+        href: "https://badgr.com/public/assertions/_3jpK4i5Rw2zNvFALq7RjQ?identity__email=zakaria1.edge@gmail.com",
+      },],
+    },
+    {
+      title: "Foundation of CyberSecurity",
+      description: "Gained a foundational understanding of cybersecurity principles, practices, and tools to enhance software security and protect against vulnerabilities.",
+      date: "June 2024",
+      issuer: "Google",
+      image: "/go.png",
+      links: [
+        {
+          icon: "🔗",
+          title: "View Certificate",
+          href: "https://www.coursera.org/account/accomplishments/certificate/27WPY432GABD",
+        },
+      ],
+    },
+    {
+      title: "Software Testing & Validation",
+      description: "Gained a comprehensive understanding of software testing principles, methodologies, and tools to ensure software quality and reliability.",
+      date: "May 2024",
+      issuer: "University of Leeds",
+      image: "/leeds.svg",
+      links: [
+        {
+          icon: "🔗",
+          title: "View Certificate",
+          href: "https://www.coursera.org/account/accomplishments/verify/GMF23H6W85AH",
+        },
+        
+      ],
+    },
+    {
+      title: "UX Design Process",
+      description: "Gained a comprehensive understanding of the UX design process, including user research, prototyping, and usability testing to enhance user experience.",
+      date: "December 2023",
+      issuer: "Google",
+      image: "/go.png",
+      links: [
+        {
+          icon: "🔗",
+          title: "View Certificate",
+          href: "https://www.coursera.org/account/accomplishments/verify/6P97H3C2MQXB",
+        },
+        
+      ],
+    },
+    {
+      title: "Foundation of User Experience (UX)",
+      description: "Gained a foundational understanding of user experience (UX) principles, including user research, design thinking, and usability testing to create user-centered designs.",
+      date: "November 2023",
+      issuer: "Google",
+      image: "/go.png",
+      links:[
+        {
+          icon: "🔗",
+          title: "View Certificate",
+          href: "https://www.coursera.org/account/accomplishments/verify/NZE9HTHW5QVS",
+        },
+        
+      ], }  
+  ],
 } as const;
