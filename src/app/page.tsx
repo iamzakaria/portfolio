@@ -203,7 +203,7 @@ export default function Page() {
                       My Professional Trainings & Certifications
                     </h2>
                     <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed max-w-[800px] mx-auto">
-                      Here are some of the professional licenses and certifications I've earned through experience and continuous learning.
+                      Here are some of the professional certifications, I have earned through experience and continuous learning.
                     </p>
                   </div>
                 </div>
