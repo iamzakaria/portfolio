@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Breaking bugs, not builds — QA Engineer ensuring flawless digital experiences.",
   summary:
-    "I'm a QA Engineer with over 4 years of experience in manual and automated testing of web, mobile, and API-based applications. I specialize in tools like Selenium, Playwright, Cypress, Postman, and JMeter, and I’ve successfully contributed to test strategy design, automation framework development, and defect reduction in Agile environments. I’m committed to delivering high-quality software through collaboration, research, and continuous improvement.",
+    "I’m a QA Engineer and IT Specialist with over 5 years of experience in manual and automated testing of web, mobile, and API-based applications. I’m skilled in tools like Selenium, Playwright, Cypress, Postman, and JMeter, and have successfully contributed to test strategy design, automation framework development, and defect reduction in Agile environments. With a solid foundation in IT systems and support, I bring a well-rounded technical perspective and a strong commitment to being a proactive, collaborative team player in any IT organization. I’m passionate about delivering high-quality software through continuous learning, cross-functional teamwork, and a user-focused mindset.",
   avatarUrl: "/me.png",
   skills: [
     "Python",
@@ -32,6 +32,7 @@ export const DATA = {
     "Playwright",
     "Selenium",
     "Cypress",
+    "IT Support & Troubleshooting",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -102,6 +103,18 @@ export const DATA = {
       end: "February 2024",
       description:
         "As an SQA Engineer at SoftBD Limited, I was responsible for planning, executing, and maintaining manual and automated test cases for various government and educational software projects. I conducted functional, regression, and UAT testing to ensure the reliability of platforms like Eporcha, Konnect, and Futurenation. I used tools like Postman for API testing, and participated in test documentation, bug reporting, and sprint activities within Agile teams. My role also involved cross-browser testing, UI/UX validation, and collaborating with developers to resolve defects efficiently before release."
+    },
+    {
+      company: "Executive Machines Limited",
+      href: "https://executivemachines.com/about-us/",
+      badges: [],
+      location: "On-site",
+      title: "IT Support Professional",
+      logoUrl: "/apple.png",
+      start: "July 2019",
+      end: "December 2020",
+      description:
+        "Operated within Apple Authorized Service Provider standards, ensuring compliance with Apple repair, Quality control & support protocols.",
     },
   ],
   education: [
@@ -385,6 +398,20 @@ export const DATA = {
   ],
   certifications: [
     {
+      title: "Python Programming Fundamentals",
+      description: "Gained a comprehensive understanding of Python programming, data structures, and algorithms to enhance software testing and automation skills.",
+      date: "May 2025",
+      issuer: "DataCamp",
+      image: "/data2.png",
+      links: [
+        {
+          icon: "🔗",
+          title: "View Certificate",
+          href: "https://www.datacamp.com/completed/statement-of-accomplishment/track/19db24fffa9967d44d8981f3b63bfd43915969d7",
+        },
+      ],
+    },
+    {
       title: "SQL Fundamentals",
       description: "Developed a solid understanding of SQL fundamentals and applied them in database testing to ensure data integrity, accuracy, and performance.",
       date: "April 2025",
@@ -467,6 +494,14 @@ export const DATA = {
           href: "https://www.coursera.org/account/accomplishments/verify/NZE9HTHW5QVS",
         },
         
-      ], }  
+      ], },
+      {
+      title: "Apple Certified Technician",
+      description: "Gained a comprehensive understanding of Apple hardware and software, including troubleshooting, repair, and maintenance of Apple devices.",
+      date: "October 2021",
+      issuer: "Apple",
+      image: "/apple.png",
+      }  
+    
   ],
 } as const;
